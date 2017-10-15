@@ -1,6 +1,6 @@
 
 div.posters {
-    text-align: justify;
+    _text-align: justify;
 }
 
 div.posters > ul {
@@ -8,6 +8,7 @@ div.posters > ul {
     margin-bottom: 0;
     padding-left: 0;
     font-size: 0;
+    text-align: center;
 }
 
 div.posters > ul > li.poster {
@@ -46,12 +47,17 @@ div.posters > ul > li.poster div.overlay{
 }
 
 div.posters > ul > li.poster div.overlay h1 {
-    text-align: center;
+    _text-align: center;
     margin-bottom: 30px;
     color: gold;
 }
 
+div.posters > ul > li.poster div.overlay p {
+    text-align: justify;
+}
+
 div.posters > ul > li.poster div.overlay button {
+    display: block;
     position: absolute;
     bottom: 20px;
 }
@@ -86,7 +92,7 @@ div.posters > ul > li.poster:hover div.overlay {
 .stars-4-and-half:before { content: '\f005 \f005 \f005 \f005 \f123'; }
 .stars-5:before { content: '\f005 \f005 \f005 \f005 \f005'; }
 
-@media screen and (max-width: 992px) { /* width < large devices. */
+@media screen and (max-width: 1200px) { /* width < large devices. */
     div.posters > ul > li.poster {
         width: calc(100% / 4);
     }
@@ -94,12 +100,26 @@ div.posters > ul > li.poster:hover div.overlay {
 
 @media screen and (max-width: 768px) {
     div.posters > ul > li.poster {
-        width: calc(100% / 2);
+        width: calc(80% / 2);
+        height: 472px;
     }
 }
 
 @media screen and (max-width: 468px) {
+    div.posters > ul {
+        _text-align: center;
+    }
     div.posters > ul > li.poster {
-        width: 100%;
+        width: 80%;
+        height: 472px;
+    }
+    div.posters > ul > li.poster div.overlay h1 {
+        text-align: left;
+    }
+    div.posters > ul > li.poster div.overlay p {
+        text-align: justify;
+    }
+    div.posters > ul > li.poster div.overlay button {
+        text-align: left;
     }
 }
