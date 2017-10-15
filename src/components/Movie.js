@@ -58,7 +58,7 @@ class Movie extends Component {
                         <p className="overview">{ movie.overview }</p>
                         <br/>
                         <div className="row">
-                            <div class="col-sm-4">
+                            <div className="col-sm-4">
                                 <p>Production companies:</p>
                                 <ul>
                                 {
@@ -68,7 +68,7 @@ class Movie extends Component {
                                 }
                                 </ul>
                             </div>
-                            <div class="col-sm-4">
+                            <div className="col-sm-4">
                                 <p>Production countries:</p>
                                 <ul>
                                 {
@@ -78,7 +78,7 @@ class Movie extends Component {
                                 }
                                 </ul>
                             </div>
-                            <div class="col-sm-4">
+                            <div className="col-sm-4">
                                 <p>Genres:</p>
                                 <ul>
                                 {

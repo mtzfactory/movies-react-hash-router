@@ -28,6 +28,10 @@ section.backdrop p {
     text-align: justify;
 }
 
+section.backdrop > div > div > p:last-of-type {
+    margin-bottom: 0;
+}
+
 section.backdrop p.overview {
     color: white;
     font-size: 20px;
