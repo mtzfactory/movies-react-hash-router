@@ -57,41 +57,35 @@ class Movie extends Component {
                     <div className="container">
                         <p className="overview">{ movie.overview }</p>
                         <br/>
-                        <div className="row">
-                            <div class="col-sm-4">
-                                <p>Production companies:</p>
-                                <ul>
-                                {
-                                    movie.production_companies && movie.production_companies.map(function(prod) {
-                                        return <li key={ prod.id }>{ prod.name }.</li>
-                                    })
-                                }
-                                </ul>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>Production countries:</p>
-                                <ul>
-                                {
-                                    movie.production_countries && movie.production_countries.map(function(prod, index) {
-                                        return <li key={ index }>{ prod.name }.</li>
-                                    })
-                                }
-                                </ul>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>Genres:</p>
-                                <ul>
-                                {
-                                    movie.genres && movie.genres.map(function(genre) {
-                                        return <li key={ genre.id }>{ genre.name }.</li>
-                                    })
-                                }
-                                </ul>
-                            </div>
-                        </div>
+                        <p>Production companies:</p>
+                        <ul>
+                        {
+                            movie.production_companies && movie.production_companies.map(function(prod) {
+                                return <li key={ prod.id }>{ prod.name }.</li>
+                            })
+                        }
+                        </ul>
+                        <br/>
+                        <p>Production countries:</p>
+                        <ul>
+                        {
+                            movie.production_countries && movie.production_countries.map(function(prod, index) {
+                                return <li key={ index }>{ prod.name }.</li>
+                            })
+                        }
+                        </ul>
                         <br/>
                         <p>Budget: { parseInt(movie.budget, 10).formatMoney() }</p>
                         <p>Revenue: { parseInt(movie.revenue, 10).formatMoney() }</p>
+                        <br/>
+                        <p>Genres:</p>
+                        <ul>
+                        {
+                            movie.genres && movie.genres.map(function(genre) {
+                                return <li key={ genre.id }>{ genre.name }.</li>
+                            })
+                        }
+                        </ul>
                         <br/>
                         <p>Duration: { movie.runtime } min.</p>
                         <br/>

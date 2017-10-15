@@ -8,7 +8,7 @@ section.backdrop {
     
     position: absolute;
     width: 100%;
-    _height: 100%;
+    height: calc(100% - 50px);
 }
 
 section.backdrop h1 {
@@ -37,7 +37,7 @@ section.backdrop p.overview {
 section.backdrop li {
     color: white;
     font-size: 16px;
-    text-align: justify;
+    _text-align: justify;
 }
 
 .stars:before {
