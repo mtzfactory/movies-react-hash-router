@@ -31,8 +31,27 @@ $ npm install --save react-router-dom
 $ npm install --save jquery
 $ npm install --save bootstrap
 $ npm run start
-
 ```
+
+Una vez instalado por __npm__ los paquetes **JQuery** y **Bootstrap**, recuerda importarlos en el fichero __index.js__, respetando el orden:
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap-theme.min.css';
+import './index.css';
+
+import App from './App';
+
+import $ from 'jquery';
+window.jQuery = window.$ = $;
+require('bootstrap');
+
+ReactDOM.render(<App/>, document.getElementById('root'));
+```
+De este modo, el menú se podrá desplegar cuando este en la vista móvil.
 
 ![screenshoot-1](./screenshoots/screenshoot-1.png)
 
