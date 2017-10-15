@@ -1,0 +1,12 @@
+body {
+  background-color: #080808;
+}
+
+.mtz-navbar-no-bottom-margin {
+  margin-bottom: 0px;
+}
+
+.mtz-no-side-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}

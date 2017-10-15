@@ -1,0 +1,13 @@
+footer.footer {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer.footer p { display: inline-block; margin: 0 }
+
+footer.footer a.pull-left { font-size: 12px; margin-left: 15px;}
+footer.footer a.pull-right { font-size: 12px; margin-right: 15px;}
+
+footer.footer i.red { color: #BC0213; }

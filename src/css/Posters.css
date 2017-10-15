@@ -1,0 +1,105 @@
+
+div.posters {
+    text-align: justify;
+}
+
+div.posters > ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 0;
+}
+
+div.posters > ul > li.poster {
+    display: inline-block;
+    position: relative;
+    width: calc(100% / 5);
+    height: 384px;
+}
+/*
+div.posters > ul > li.poster > img.img-responsive {
+    max-width: unset;
+    _height: unset;
+    max-height: 100%;
+    _width: auto;
+}
+*/
+div.posters > ul > li.poster div.img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.posters > ul > li.poster div.overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px 15px 5px 15px;
+    overflow: hidden;
+    font-size: 14px;
+    color: white;
+}
+
+div.posters > ul > li.poster div.overlay h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: gold;
+}
+
+div.posters > ul > li.poster div.overlay button {
+    position: absolute;
+    bottom: 20px;
+}
+
+div.posters > ul > li.poster:hover div.overlay {
+    display: block;
+    _background-color: black;
+    _opacity: 0.75;
+    background-color: rgba(2, 2, 12, 0.65);
+}
+
+.stars:before {
+    position: absolute;
+	top: 5px;
+	left: 10px;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: goldenrod;
+}
+
+.stars-0:before { content: '\f006 \f006 \f006 \f006 \f006'; }
+.stars-0-and-half:before { content: '\f123 \f006 \f006 \f006 \f006'; }
+.stars-1:before { content: '\f005 \f006 \f006 \f006 \f006'; }
+.stars-1-and-half:before { content: '\f005 \f123 \f006 \f006 \f006'; }
+.stars-2:before { content: '\f005 \f005 \f006 \f006 \f006'; }
+.stars-2-and-half:before { content: '\f005 \f005 \f123 \f006 \f006'; }
+.stars-3:before { content: '\f005 \f005 \f005 \f006 \f006'; }
+.stars-3-and-half:before { content: '\f005 \f005 \f005 \f123 \f006'; }
+.stars-4:before { content: '\f005 \f005 \f005 \f005 \f006'; }
+.stars-4-and-half:before { content: '\f005 \f005 \f005 \f005 \f123'; }
+.stars-5:before { content: '\f005 \f005 \f005 \f005 \f005'; }
+
+@media screen and (max-width: 992px) { /* width < large devices. */
+    div.posters > ul > li.poster {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.posters > ul > li.poster {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 468px) {
+    div.posters > ul > li.poster {
+        width: 100%;
+    }
+}

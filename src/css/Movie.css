@@ -1,0 +1,65 @@
+section.backdrop {
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    
+    position: absolute;
+    width: 100%;
+    _height: 100%;
+}
+
+section.backdrop h1 {
+    font-size: 82px;
+    color: gold;
+}
+
+section.backdrop h1 small {
+    display: block;
+    font-size: 22px;
+    color: #ccc;
+}
+
+section.backdrop p {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+}
+
+section.backdrop p.overview {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+section.backdrop li {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.stars:before {
+    position: relative;
+	top: 5px;
+    left: -10px;
+    float: right;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: goldenrod;
+}
+
+.stars-0:before { content: '\f006 \f006 \f006 \f006 \f006'; }
+.stars-0-and-half:before { content: '\f123 \f006 \f006 \f006 \f006'; }
+.stars-1:before { content: '\f005 \f006 \f006 \f006 \f006'; }
+.stars-1-and-half:before { content: '\f005 \f123 \f006 \f006 \f006'; }
+.stars-2:before { content: '\f005 \f005 \f006 \f006 \f006'; }
+.stars-2-and-half:before { content: '\f005 \f005 \f123 \f006 \f006'; }
+.stars-3:before { content: '\f005 \f005 \f005 \f006 \f006'; }
+.stars-3-and-half:before { content: '\f005 \f005 \f005 \f123 \f006'; }
+.stars-4:before { content: '\f005 \f005 \f005 \f005 \f006'; }
+.stars-4-and-half:before { content: '\f005 \f005 \f005 \f005 \f123'; }
+.stars-5:before { content: '\f005 \f005 \f005 \f005 \f005'; }
