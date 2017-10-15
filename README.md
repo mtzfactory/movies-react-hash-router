@@ -6,7 +6,7 @@
 
 ### Movies Collection ~ realizado en React, react-router-dom y un poco de Bootstrap.
 
-Ejemplo de uso del componente [```react-router-dom```][react-router-dom], con los metodos **HashRouter**, para uso de enrutados a través del __hash__ de la URL y del método **withRouter**, para el acceso al objeto __history__ del navegador.
+Ejemplo de uso del componente [```react-router-dom```][react-router-dom], con los metodos **HashRouter**, para enrutados a través del __hash__ de la URL y del método **withRouter**, para el acceso al objeto __history__ del navegador.
 
 [Movies Collection](http://movies-collection.surge.sh)
 
