@@ -6,7 +6,7 @@
 
 ### Movies Collection ~ realizado en React, react-router-dom y un poco de Bootstrap.
 
-Ejemplo de uso del componente [```react-router-dom```][react-router-dom], con los metodos [**HashRouter**][hashrouter], para enrutados a través del __hash__ de la URL, y el método [**withRouter**][withrouter], para el acceso al objeto __history__ del navegador.
+Ejemplo de uso del componente [```react-router-dom```][react-router-dom], con los metodos [**HashRouter**][hashrouter], para enrutados a través del _hash_ de la URL, y el método [**withRouter**][withrouter], para el acceso al objeto _history_ del navegador.
 
 [Movies Collection](http://movies-collection.surge.sh)
 
@@ -33,7 +33,7 @@ $ npm install --save bootstrap
 $ npm run start
 ```
 
-Una vez instalado por __npm__ los paquetes **JQuery** y **Bootstrap**, recuerda importarlos en el fichero __index.js__, respetando el orden:
+Una vez instalado por _npm_ los paquetes **JQuery** y **Bootstrap**, recuerda importarlos en el fichero _index.js_, respetando el orden:
 
 ```javascript
 import React from 'react';
