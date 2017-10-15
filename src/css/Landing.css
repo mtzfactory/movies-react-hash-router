@@ -25,16 +25,15 @@ section.landing div.wellcome img {
 }
 
 section.landing div.wellcome h1 {
-    text-align: center;
-
     font-family: 'Limelight', cursive;
     font-weight: normal;
     font-size: 82px;
+    text-align: center;
     color: white;
 }
 
 section.landing div.wellcome span {
-    color: palegreen;
+    color: rgb(53, 207, 175);
     font-weight: bold;
 }
 
