@@ -34,9 +34,9 @@ $ npm run start
 
 ```
 
-![screenshoot-1](./img/screenshoot-1.png)
+![screenshoot-1](./screenshoots/screenshoot-1.png)
 
-![screenshoot-2](./img/screenshoot-2.png)
+![screenshoot-2](./screenshoots/screenshoot-2.png)
 
 
 #### SkylabCoders Academy - Full Stack Web Development Bootcamp
