@@ -44,4 +44,4 @@ $ npm run start
 [create-react-app]: https://github.com/facebookincubator/create-react-app
 [react-router-dom]: https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom
 [hashrouter]: https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/HashRouter.md
-[withrouter]: https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/withRouter.md
+[withrouter]: https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/withRouter.md
