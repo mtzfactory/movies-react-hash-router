@@ -21,7 +21,6 @@ class Search extends Component {
     searchMovie(query) {
         moviesService.searchMovies(query)
             .then(movies => {
-                console.log(movies)
                 this.setState(movies)
             })
             .catch(function (err) {
