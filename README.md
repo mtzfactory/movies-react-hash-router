@@ -14,7 +14,7 @@ Para instalar este ejemplo:
 
 ```bash
 $ git clone https://github.com/mtzfactory/movies-react-hash-router.git
-$ cd singlepage-react-router-bootstrap
+$ cd movies-react-hash-router
 $ npm install
 $ npm start
 ```
