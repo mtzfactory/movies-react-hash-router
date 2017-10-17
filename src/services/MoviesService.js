@@ -10,28 +10,28 @@ class MoviesService {
             })
     }
 
-    getPopular() {
-        return this.__get(constants.POPULAR)
+    getPopular(page) {
+        return this.__get(constants.POPULAR + (page ? '&page=' + page : ''))
     }
 
-    getTopRated() {
-        return this.__get(constants.TOPRATED)
+    getTopRated(page) {
+        return this.__get(constants.TOPRATED + (page ? '&page=' + page : ''))
     }
 
-    getUpcoming() {
-        return this.__get(constants.UPCOMING)
+    getUpcoming(page) {
+        return this.__get(constants.UPCOMING + (page ? '&page=' + page : ''))
     }
 
-    getNowPlaying() {
-        return this.__get(constants.NOWPLAYING)
+    getNowPlaying(page) {
+        return this.__get(constants.NOWPLAYING + (page ? '&page=' + page : ''))
     }
 
     getMovieById(id) {
         return this.__get(constants.MOVIEBYID.replace('{movieId}', id))
     }
 
-    searchMovies(q) {
-        return this.__get(constants.SEARCHMOVIES.replace('{searchMovie}', q))
+    searchMovies(q, page) {
+        return this.__get(constants.SEARCHMOVIES.replace('{searchMovie}', q) + (page ? '&page=' + page : ''))
     }
 
     getConfiguration() {

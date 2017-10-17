@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
+import './Movie.css'
 
-import * as constants from '../constants/Constants';
-import moviesService from '../services/MoviesService'
-
-import '../css/Movie.css'
+import * as constants from '../../constants/Constants';
+import moviesService from '../../services/MoviesService'
 
 class Movie extends Component {
     constructor() {

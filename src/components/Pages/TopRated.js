@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import moviesService from '../services/MoviesService'
-import Posters from './Posters'
+import moviesService from '../../services/MoviesService'
+import Posters from '../Posters/Posters'
 
 class TopRated extends Component {
 

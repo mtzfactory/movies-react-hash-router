@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
+//import '../css/Movie.css'
 
-import moviesService from '../services/MoviesService'
-import Posters from './Posters'
-
-import '../css/Movie.css'
+import moviesService from '../../services/MoviesService'
+import Posters from '../Posters/Posters'
 
 class Search extends Component {
     constructor() {

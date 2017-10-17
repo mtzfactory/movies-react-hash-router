@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import Waypoint from 'react-waypoint';
+import './Posters.css'
 
-import * as constants from '../constants/Constants';
-
-import '../css/Posters.css'
+import * as constants from '../../constants/Constants';
 
 class Posters extends Component {
+
+    constructor() {
+        super()
+
+        this.state = {
+            isLoading: false
+        }
+    }
 
     handleMoreInfo(id) {
         this.props.history.push('/movie/' + id)
@@ -22,6 +30,20 @@ class Posters extends Component {
 
         return 'overlay stars stars-' + Math.floor(stars) + half
     }
+
+    _loadMoreItems = () => {
+        this.setState({ isLoading: true });
+        //this.props.onLoadNextPage()
+        this.setState({ isLoading: false });
+    }
+
+    _renderWaypoint() {
+        if (!this.state.isLoading) {
+          return (
+            <Waypoint onEnter={ this._loadMoreItems }/>
+          )
+        }
+      }
 
     render() {
         return (
@@ -42,6 +64,10 @@ class Posters extends Component {
                         })
                     }
                 </ul>
+                {/* <div className="infinite-scroll-waypoint">
+                    { this._renderWaypoint() }
+                    Loading more items…
+                </div> */}
             </div>
         )
     }

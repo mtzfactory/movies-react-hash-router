@@ -3,13 +3,13 @@ import { Switch, Route } from 'react-router-dom'
 
 import moviesSerice from '../services/MoviesService'
 
-import Landing from './Landing'
-import Popular from './Popular'
-import Upcoming from './Upcoming'
-import TopRated from './TopRated'
-import NowPlaying from './NowPlaying'
-import Search from './Search'
-import Movie from './Movie'
+import Landing from './Landing/Landing'
+import Popular from './Pages/Popular'
+import Upcoming from './Pages/Upcoming'
+import TopRated from './Pages/TopRated'
+import NowPlaying from './Pages/NowPlaying'
+import Search from './Search/Search'
+import Movie from './Movie/Movie'
 
 class Movies extends Component {
 

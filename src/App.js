@@ -6,7 +6,7 @@ import './functions/functions.js'
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom
 import { HashRouter } from 'react-router-dom'
 
-import Navitation from './components/Navigation'
+import Navitation from './components/Navigation/Navigation'
 import Movies from './components/Movies'
 
 class App extends Component {

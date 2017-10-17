@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import moviesService from '../services/MoviesService'
-import Posters from './Posters'
+import moviesService from '../../services/MoviesService'
+import Posters from '../Posters/Posters'
 
-class Upcoming extends Component {
+class NowPlaying extends Component {
 
     constructor() {
         super()
 
         this.state = {
-            page: -1,
+            page: 0,
             results: [],
             total_pages: -1,
             total_results: -1
@@ -17,7 +17,11 @@ class Upcoming extends Component {
     }
 
     componentDidMount() {
-        moviesService.getUpcoming()
+        this.loadNextPage()
+    }
+
+    loadNextPage = () => {
+        moviesService.getNowPlaying(this.state.page+1)
             .then(movies => {
                 this.setState(movies)
             })
@@ -28,13 +32,14 @@ class Upcoming extends Component {
 
     render() {
         return (
-            <section className="upcoming">
+            <section className="now-playing">
                 <Posters 
                     imageBaseUrl={ this.props.imageBaseUrl }
-                    movies={ this.state.results }/>
+                    movies={ this.state.results }
+                    onLoadNextPage={ this.loadNextPage }/>
             </section>
         )
     }
 }
 
-export default Upcoming
+export default NowPlaying

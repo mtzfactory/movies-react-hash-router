@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+import './Footer.css'
 
-import moviesService from '../services/MoviesService'
-
-import '../css/Footer.css'
+import moviesService from '../../services/MoviesService'
 
 class Footer extends Component {
 
